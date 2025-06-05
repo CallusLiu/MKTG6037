@@ -3,8 +3,10 @@ import base64
 import os
 
 def resume_page():
-    pdf_file_path = r'D:\PythonProject_外库\6037-ML\04_personal_site_streamlit\static\docs\刘哲恺-产品简历.pdf'
-
+     # 获取当前文件目录
+    current_dir = os.path.dirname(__file__)
+    pdf_file_path = os.path.join(current_dir, "..", "static", "docs", "刘哲恺-产品简历.pdf")
+    
     if os.path.exists(pdf_file_path):
         with open(pdf_file_path, "rb") as pdf_file:
             PDFbyte = pdf_file.read()
