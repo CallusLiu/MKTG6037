@@ -1,0 +1,107 @@
+
+/* LinkedIn 风格蓝白主题 */
+
+/* 全局变量 */
+:root {
+    --primary-color: #0A66C2;   /* LinkedIn 蓝 */
+    --secondary-color: #378FE9; /* 浅蓝色 */
+    --background-color: #FFFFFF; /* 白色背景 */
+    --sidebar-bg-color: #0A66C2; /* 侧边栏深蓝 */
+    --sidebar-text-color: #FFFFFF; /* 侧边栏白字 */
+    --card-bg-color: #FFFFFF;    /* 卡片白底 */
+    --text-color: #2D2D2D;         /* 深灰文字 */
+    --accent-color: #D0E8FF;     /* 强调色 */
+}
+
+/* 基础样式 */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4 {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* 卡片式布局 */
+.stCard {
+    background: var(--card-bg-color);
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* 链接样式 */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #F5F8FF;
+    border-top: 1px solid #e0e0e0;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+/* 按钮样式 */
+.stButton>button {
+    background-color: var(--primary-color) !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 24px !important;
+    padding: 8px 24px !important;
+    transition: background-color 0.2s !important;
+}
+
+.stButton>button:hover {
+    background-color: var(--secondary-color) !important;
+}
+
+/* 侧边栏样式 */
+.stSidebar {
+    background-color: var(--sidebar-bg-color) !important;
+    color: var(--sidebar-text-color) !important;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+
+/* 侧边栏文字颜色强制 */
+.stSidebar .css-1cpxqw2, .stSidebar .css-1v3fvcr, .stSidebar .css-1d391kg {
+    color: var(--sidebar-text-color) !important;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .stCard {
+        padding: 1rem;
+    }
+}

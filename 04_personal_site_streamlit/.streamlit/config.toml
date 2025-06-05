@@ -1,0 +1,19 @@
+[client]
+showSidebarNavigation = true
+
+[theme]
+base="dark"
+primaryColor="#1E90FF"  # 深蓝色
+backgroundColor="#0E1117"  # 深色背景
+secondaryBackgroundColor="#262730"  # 次级深色背景
+textColor="#FFFFFF"  # 白色文字
+font="sans serif"
+
+[global]
+developmentMode = false
+
+[server]
+enableCORS = false
+
+[ui]
+locale = "zh_CN"  # 强制使用中文界面
