@@ -16,7 +16,7 @@ def home_page():
     )
 
     # add a photo to the right column
-    image_path = r'/workspaces/MKTG6037/04_personal_site_streamlit/static/images/证件照.jpg'
+    image_path = r'..\04_personal_site_streamlit\static\images\证件照.jpg'
     if os.path.exists(image_path):
         image = Image.open(image_path)
         right_col.image(image, width=200)
