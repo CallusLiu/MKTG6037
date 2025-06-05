@@ -3,7 +3,7 @@ import base64
 import os
 
 def resume_page():
-    pdf_file_path = r'D:\PythonProject_外库\6037-ML\04_personal_site_streamlit\static\docs\刘哲恺-产品简历.pdf'
+    pdf_file_path = r'/workspaces/MKTG6037/04_personal_site_streamlit/static/docs/刘哲恺-产品简历.pdf'
 
     if os.path.exists(pdf_file_path):
         with open(pdf_file_path, "rb") as pdf_file:
